@@ -1,0 +1,63 @@
+@use "../utils/" as u;
+.introduction {
+  font-family: var(--Epilogue);
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: var(--Dark-primary);
+  display: flex;
+  justify-content: space-evenly;
+  .about,
+  .me-fig {
+    width: 35%;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .name {
+      font-weight: 600;
+      font-size: var(--fs-500);
+      color: var(--Dark-secondary);
+    }
+    .profession {
+      font-size: var(--fs-xl);
+      color: var(--White);
+      margin-block: 2rem;
+    }
+    &__desc {
+      margin-block: 1rem;
+      color: var(--Txt-lightgray);
+    }
+    &__LinkBtns {
+      display: flex;
+      .explore-work {
+        background-color: var(--Dark-secondary);
+        font-weight: 600;
+        color: var(--Dark-primary);
+        &:hover {
+          transition: all 250ms ease;
+          background-color: var(--Dark-third);
+          color: var(--White);
+        }
+      }
+      .contact-me {
+        background-color: var(--Dark-primary);
+        font-weight: 600;
+        color: var(--White);
+        border: solid 2px var(--White);
+        &:hover {
+          transition: all 250ms ease;
+          border-color: var(--Dark-secondary);
+          color: var(--Dark-secondary);
+        }
+      }
+    }
+  }
+  .me-fig {
+    display: flex;
+    align-items: center;
+    &__img {
+      width: 100%;
+    }
+  }
+}
