@@ -21,6 +21,7 @@ body {
       align-items: center;
       &__img {
         margin: u.rem(5);
+        height: (45);
         width: u.rem(45);
       }
     }
@@ -90,6 +91,7 @@ body {
       // flex-direction: column;
       .logo {
         &__img {
+          height: u.rem(35);
           width: u.rem(35);
         }
       }
