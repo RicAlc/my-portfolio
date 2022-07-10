@@ -1,13 +1,69 @@
-header {
+@use "../utils/" as u;
+.header {
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   nav {
     display: flex;
-    background-color: crimson;
-    ul {
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 100%;
+    height: 100px;
+    background-color: var(--Dark-primary);
+    .logo {
       display: flex;
+      align-items: center;
+      &__img {
+        margin: u.rem(5);
+        width: u.rem(45);
+      }
+    }
+    .nav-bar {
+      list-style-type: none;
+      width: 45%;
+      justify-content: space-between;
+      display: flex;
+
+      &__link {
+        font-weight: 600;
+        color: var(--White);
+        position: relative;
+        text-decoration: none;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 0.1em;
+          background-color: var(--Text-hover);
+          opacity: 0;
+          transition: opacity 300ms, transform 300ms;
+          opacity: 1;
+          transform: scale(0);
+          transform-origin: center;
+        }
+        &:hover::after,
+        &:focus::after {
+          transform: scale(1);
+        }
+      }
+    }
+    .contact {
+      padding: u.rem(10);
+      border: 2px solid var(--White);
+      border-radius: 5px;
+      font-weight: 700;
+      &:hover {
+        cursor: pointer;
+        border-color: var(--Text-hover);
+        transition: color 0.3s ease;
+      }
+    }
+    .menu {
+      display: none;
     }
   }
 }
