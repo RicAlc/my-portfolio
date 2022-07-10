@@ -1,17 +1,21 @@
 @use "../utils/" as u;
+body {
+  background-color: #323d54;
+}
 .header {
   width: 100vw;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  height: 100px;
+  background-color: var(--Dark-primary);
+  justify-content: center;
+  color: white;
+
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    color: white;
-    width: 100%;
-    height: 100px;
-    background-color: var(--Dark-primary);
+    justify-content: space-between;
+    width: 90%;
     .logo {
       display: flex;
       align-items: center;
@@ -20,9 +24,21 @@
         width: u.rem(45);
       }
     }
+    .menu {
+      display: none;
+      color: var(--White);
+      &__icon {
+        width: u.rem(30);
+        height: u.rem(30);
+      }
+      &:hover {
+        transition: color 0.3s ease-in-out;
+        color: var(--Text-hover);
+      }
+    }
     .nav-bar {
+      width: 50%;
       list-style-type: none;
-      width: 45%;
       justify-content: space-between;
       display: flex;
 
@@ -62,8 +78,58 @@
         transition: color 0.3s ease;
       }
     }
-    .menu {
-      display: none;
+  }
+}
+
+@include u.breakpoint-down(medium) {
+  body {
+  }
+  .header {
+    height: u.rem(60);
+    nav {
+      // flex-direction: column;
+      .logo {
+        &__img {
+          width: u.rem(35);
+        }
+      }
+
+      .nav-bar {
+        background-color: whitesmoke;
+        position: fixed;
+        top: u.rem(60);
+        left: 100%;
+        width: 100%;
+        height: calc(100% - u.rem(60));
+        align-items: center;
+        // visibility: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+        li {
+          margin-block: u.rem(20);
+        }
+        &__link {
+          color: var(--Dark-primary);
+        }
+      }
+      .contact {
+        // visibility: hidden;
+        position: fixed;
+        top: u.rem(250);
+        border: none;
+        color: var(--Dark-primary);
+        left: 100%;
+        width: 100%;
+        text-align: center;
+      }
+      .toggle {
+        visibility: visible;
+        left: 0;
+        transition: left 0.2s ease-in-out;
+      }
+      .menu {
+        display: block;
+      }
     }
   }
 }

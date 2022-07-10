@@ -1,5 +1,12 @@
 import logo from "../assets/logo.png";
+import { ImMenu } from "react-icons/im";
+import { useState } from "react";
+
 function Header() {
+  const [menuToggle, setMenuToggle] = useState(true);
+  const openMenu = () => {
+    setMenuToggle(!menuToggle);
+  };
   return (
     <header className='header'>
       <nav>
@@ -7,7 +14,7 @@ function Header() {
           <img src={logo} alt='Logo' className='logo__img' />
           RicAlc
         </div>
-        <ul className='nav-bar'>
+        <ul className={`${menuToggle ? "nav-bar" : "nav-bar toggle"}`}>
           <li>
             <a className='nav-bar__link' href=''>
               SOBRE MI
@@ -24,8 +31,12 @@ function Header() {
             </a>
           </li>
         </ul>
-        <div className='contact'>CONTACTÁME</div>
-        <div className='menu'>-_-_-</div>
+        <div className={`${menuToggle ? "contact" : "contact toggle"}`}>
+          CONTACTÁME
+        </div>
+        <div className='menu'>
+          <ImMenu className='menu__icon' onClick={() => openMenu()} />
+        </div>
       </nav>
     </header>
   );
