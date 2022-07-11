@@ -2,13 +2,17 @@
 .introduction {
   font-family: var(--Epilogue);
   width: 100%;
+  min-height: u.rem(800);
   height: calc(100vh - 100px);
   background-color: var(--Dark-primary);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   .about,
   .me-fig {
-    width: 35%;
+    min-height: u.rem(700);
+    margin: 1rem;
+    max-width: u.rem(720);
+    width: 45%;
   }
   .about {
     display: flex;
@@ -34,6 +38,7 @@
         background-color: var(--Dark-secondary);
         font-weight: 600;
         color: var(--Dark-primary);
+        font-size: var(--fs-400);
         &:hover {
           transition: all 250ms ease;
           background-color: var(--Dark-third);
@@ -43,6 +48,7 @@
       .contact-me {
         background-color: var(--Dark-primary);
         font-weight: 600;
+        font-size: var(--fs-400);
         color: var(--White);
         border: solid 2px var(--White);
         &:hover {
@@ -58,6 +64,39 @@
     align-items: center;
     &__img {
       width: 100%;
+    }
+  }
+}
+@include u.breakpoint-down(medium) {
+  .introduction {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: fit-content;
+
+    .about,
+    .me-fig {
+      min-height: fit-content;
+      width: 85%;
+    }
+    .me-fig {
+      justify-content: center;
+      &__img {
+        max-width: u.rem(500);
+      }
+    }
+    .about {
+      max-width: u.rem(500);
+      .name {
+        margin-block: u.rem(15);
+      }
+      .profession {
+        margin-block: 1.2rem;
+        font-size: var(--fs-800);
+      }
+      &__LinkBtns {
+        margin-block: u.rem(12);
+        justify-content: space-evenly;
+      }
     }
   }
 }

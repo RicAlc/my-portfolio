@@ -3,9 +3,9 @@ import dev from "../assets/Ricardo.png";
 
 function Introduction() {
   return (
-    <section className='introduction'>
+    <section className='introduction' role='main'>
       <div className='about'>
-        <h3 className='name'>RICARDO ALCALÁ</h3>
+        <h1 className='name'>RICARDO ALCALÁ</h1>
         <h2 className='profession'>Desarrollador web</h2>
         <p className='about__desc'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
