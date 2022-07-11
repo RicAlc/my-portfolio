@@ -1,7 +1,4 @@
 @use "../utils/" as u;
-body {
-  background-color: #323d54;
-}
 .header {
   width: 100vw;
   display: flex;
@@ -12,6 +9,7 @@ body {
   color: white;
 
   nav {
+    max-width: u.rem(1440);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,12 +19,14 @@ body {
       align-items: center;
       &__img {
         margin: u.rem(5);
-        height: (45);
-        width: u.rem(45);
+        width: u.rem(200);
       }
     }
     .menu {
       display: none;
+      padding: u.rem(3) u.rem(6) 0;
+      border: solid 1px rgba(250, 250, 250, 0.3);
+      border-radius: u.rem(3);
       color: var(--White);
       &__icon {
         width: u.rem(30);
@@ -34,7 +34,7 @@ body {
       }
       &:hover {
         transition: color 0.3s ease-in-out;
-        color: var(--Text-hover);
+        color: var(--Dark-secondary);
       }
     }
     .nav-bar {
@@ -55,7 +55,7 @@ body {
           left: 0;
           width: 100%;
           height: 0.1em;
-          background-color: var(--Text-hover);
+          background-color: var(--Dark-secondary);
           opacity: 0;
           transition: opacity 300ms, transform 300ms;
           opacity: 1;
@@ -69,14 +69,15 @@ body {
       }
     }
     .contact {
+      font-family: var(--Epilogue);
       padding: u.rem(10);
       border: 2px solid var(--White);
       border-radius: 5px;
       font-weight: 700;
       &:hover {
         cursor: pointer;
-        border-color: var(--Text-hover);
-        transition: color 0.3s ease;
+        border-color: var(--Dark-secondary);
+        transition: border-color 0.3s ease;
       }
     }
   }
@@ -91,8 +92,7 @@ body {
       // flex-direction: column;
       .logo {
         &__img {
-          height: u.rem(35);
-          width: u.rem(35);
+          width: u.rem(130);
         }
       }
 
@@ -129,6 +129,7 @@ body {
         left: 0;
         transition: left 0.2s ease-in-out;
       }
+
       .menu {
         display: block;
       }

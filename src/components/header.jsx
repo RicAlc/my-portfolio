@@ -1,18 +1,25 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/ricalc.png";
 import { ImMenu } from "react-icons/im";
 import { useState } from "react";
 
 function Header() {
   const [menuToggle, setMenuToggle] = useState(true);
+  const [aria_label, setAria_label] = useState("Abrir menú");
   const openMenu = () => {
     setMenuToggle(!menuToggle);
+    if (menuToggle) {
+      document.body.style.overflow = "hidden";
+      setAria_label("Cerrar menú");
+    } else {
+      document.body.style.overflow = "auto";
+      setAria_label("Abrir menú");
+    }
   };
   return (
     <header className='header'>
-      <nav>
+      <nav role='navigation'>
         <div className='logo'>
           <img src={logo} alt='Logo' className='logo__img' />
-          RicAlc
         </div>
         <ul className={`${menuToggle ? "nav-bar" : "nav-bar toggle"}`}>
           <li>
@@ -34,7 +41,7 @@ function Header() {
         <div className={`${menuToggle ? "contact" : "contact toggle"}`}>
           CONTACTÁME
         </div>
-        <div className='menu'>
+        <div className='menu' aria-label={aria_label} role='navigation'>
           <ImMenu className='menu__icon' onClick={() => openMenu()} />
         </div>
       </nav>
