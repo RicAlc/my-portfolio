@@ -23,17 +23,17 @@ function Header() {
         </div>
         <ul className={`${menuToggle ? "nav-bar" : "nav-bar toggle"}`}>
           <li>
-            <a className='nav-bar__link' href=''>
+            <a className='nav-bar__link' href='/'>
               SOBRE MI
             </a>
           </li>
           <li>
-            <a className='nav-bar__link' href=''>
+            <a className='nav-bar__link' href='/'>
               PROYECTOS
             </a>
           </li>
           <li>
-            <a className='nav-bar__link' href=''>
+            <a className='nav-bar__link' href='/'>
               BLOG
             </a>
           </li>
