@@ -38,7 +38,12 @@ function Header() {
             </a>
           </li>
         </ul>
-        <div className={`${menuToggle ? "contact" : "contact toggle"}`}>
+        <div
+          className={`${menuToggle ? "contact" : "contact toggle"}`}
+          onClick={() =>
+            window.open("mailto:alcala.ricardoc@gmail.com", "_blank")
+          }
+        >
           CONTACTÁME
         </div>
         <div className='menu' aria-label={aria_label} role='navigation'>
