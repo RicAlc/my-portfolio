@@ -7,12 +7,12 @@
   background-color: var(--Dark-primary);
   display: flex;
   justify-content: center;
+  max-width: u.rem(1550);
   .about,
   .me-fig {
     min-height: u.rem(700);
+    width: 48%;
     margin: 1rem;
-    max-width: u.rem(720);
-    width: 45%;
   }
   .about {
     display: flex;

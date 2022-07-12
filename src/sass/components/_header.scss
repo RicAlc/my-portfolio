@@ -25,7 +25,7 @@
     .menu {
       display: none;
       padding: u.rem(3) u.rem(6) 0;
-      border: solid 1px rgba(250, 250, 250, 0.3);
+      border: solid 1px var(--Light-border);
       border-radius: u.rem(3);
       color: var(--White);
       &__icon {

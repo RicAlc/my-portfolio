@@ -1,0 +1,38 @@
+@use "../utils/" as u;
+.latest-work {
+  width: 100%;
+  max-width: u.rem(1550);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__subtext {
+    margin: u.rem(15) 3%;
+    align-self: flex-start;
+    color: var(--Dark-secondary);
+  }
+  .work {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+    margin-block: u.rem(35);
+    .latest-work__title {
+      color: var(--White);
+      font-size: var(--fs-800);
+    }
+    .explore-more {
+      font-size: var(--fs-500);
+      font-weight: 600;
+      background-color: var(--Dark-primary);
+      color: var(--White);
+      border: solid 1px var(--Light-border);
+      margin-right: 3%;
+      &:hover {
+        color: var(--Dark-secondary);
+        border-color: var(--White);
+        transition: all 0.6s ease;
+      }
+    }
+  }
+}
