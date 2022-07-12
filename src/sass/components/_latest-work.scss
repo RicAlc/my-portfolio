@@ -5,9 +5,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-block: 2rem;
   justify-content: center;
   &__subtext {
-    margin: u.rem(15) 3%;
+    margin: 0 3%;
     align-self: flex-start;
     color: var(--Dark-secondary);
   }
@@ -16,7 +17,7 @@
     align-items: center;
     width: 95%;
     justify-content: space-between;
-    margin-block: u.rem(35);
+    margin: u.rem(15) 0 u.rem(35);
     .latest-work__title {
       color: var(--White);
       font-size: var(--fs-800);
