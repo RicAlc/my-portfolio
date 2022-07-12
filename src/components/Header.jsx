@@ -7,6 +7,7 @@ function Header() {
   const [aria_label, setAria_label] = useState("Abrir menú");
   const openMenu = () => {
     setMenuToggle(!menuToggle);
+    window.scrollTo(0, 0);
     if (menuToggle) {
       document.body.style.overflow = "hidden";
       setAria_label("Cerrar menú");
