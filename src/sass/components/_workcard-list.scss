@@ -1,0 +1,17 @@
+@use "../utils/" as u;
+.wc-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  margin-block: u.rem(12);
+  .work-card-list {
+    // border: solid 1px var(--Light-border);
+    // padding: 1rem;
+    // border-bottom: solid 1px var(--Light-border);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto;
+  }
+}
