@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "To do App",
+    "tag": "React",
+    "imgFile": "todo-app.png",
+    "link": "https://ricalc-todo.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "Atlantic",
+    "tag": "Hackathon",
+    "imgFile": "atlantic.jpeg",
+    "link": "https://ricalc.github.io/Atlantic/"
+  },
+  {
+    "id": 3,
+    "title": "Time tracking dashboard",
+    "tag": "HTML CSS JS",
+    "imgFile": "time-dashboard.png",
+    "link": "https://ricalc.github.io/Portfolio/Front-end/TimeTrackingDashboard/index.html"
+  }
+]

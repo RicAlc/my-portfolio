@@ -1,0 +1,44 @@
+@use "../utils/" as u;
+.work-card {
+  position: relative;
+  border-radius: u.rem(2);
+  min-width: u.rem(450);
+  width: u.rem(450);
+  height: u.rem(500);
+  margin: u.rem(10);
+  overflow: hidden;
+  &__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    filter: brightness(0.6);
+    transition: 0.35s;
+  }
+  &:before > &__img {
+    transform: scale(1);
+    cursor: pointer;
+  }
+  &:hover > &__img {
+    cursor: pointer;
+    filter: brightness(1);
+    transform: scale(1.075);
+  }
+  &__tag {
+    padding: u.rem(6) u.rem(10);
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20%;
+    font-weight: 600;
+    left: 8%;
+    border-radius: 2rem;
+  }
+  &__title {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    color: var(--White);
+  }
+}
