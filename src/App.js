@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
 import LatestWork from "./components/LatestWork";
@@ -11,6 +12,7 @@ function App() {
       <Volumen />
       <LatestWork />
       <Volumen />
+      <Footer />
     </div>
   );
 }

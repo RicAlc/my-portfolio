@@ -1,0 +1,5 @@
+@use "../utils/" as u;
+.content {
+  width: calc(80% + 100px);
+  max-width: u.rem(1550);
+}
