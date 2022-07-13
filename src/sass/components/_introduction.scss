@@ -1,15 +1,15 @@
 @use "../utils/" as u;
 .introduction {
   font-family: var(--Epilogue);
-  width: 100%;
-  min-height: u.rem(700);
+  width: 95%;
+  min-height: u.rem(550);
   height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
   max-width: u.rem(1550);
   .about,
   .me-fig {
-    min-height: u.rem(700);
+    min-height: u.rem(550);
     width: 48%;
     margin: 1rem;
   }
