@@ -44,17 +44,17 @@
           color: var(--White);
         }
       }
-      .contact-me {
-        background-color: var(--Dark-primary);
-        font-weight: 600;
-        font-size: var(--fs-400);
-        color: var(--White);
-        border: solid 2px var(--White);
-        &:hover {
-          transition: all 250ms ease;
-          border-color: var(--Dark-secondary);
-          color: var(--Dark-secondary);
-        }
+    }
+    &__contact-me {
+      background-color: var(--Dark-primary);
+      font-weight: 600;
+      font-size: var(--fs-400);
+      color: var(--White);
+      border: solid 2px var(--White);
+      &:hover {
+        transition: all 250ms ease;
+        border-color: var(--Dark-secondary);
+        color: var(--Dark-secondary);
       }
     }
   }

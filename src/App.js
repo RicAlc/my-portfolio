@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe";
+import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
@@ -12,7 +13,7 @@ function App() {
       <Introduction />
       <AboutMe />
       <LatestWork />
-      <Volumen />
+      <ContactMe />
       <Footer />
     </div>
   );

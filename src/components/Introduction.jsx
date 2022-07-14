@@ -15,13 +15,13 @@ function Introduction() {
           </p>
           <div className='about__LinkBtns'>
             <LinkBtn
-              classname={"explore-work"}
+              classname='explore-work'
               text='Ver proyectos'
               link='https://github.com/RicAlc'
               newTab={true}
             />
             <LinkBtn
-              classname='contact-me'
+              classname='about__contact-me'
               text='Contáctame'
               link='mailto:alcala.ricardoc@gmail.com'
               newTab={true}
