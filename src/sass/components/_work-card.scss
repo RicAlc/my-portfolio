@@ -48,3 +48,17 @@
     color: var(--White);
   }
 }
+@include u.breakpoint-down(medium) {
+  .work-card {
+    &__img {
+      min-height: u.rem(200);
+    }
+    &__tag {
+      bottom: 10%;
+    }
+    &__title {
+      bottom: unset;
+      top: 10%;
+    }
+  }
+}

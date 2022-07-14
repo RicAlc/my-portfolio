@@ -11,7 +11,14 @@
     grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    // justify-content: flex-start;
     overflow: auto;
+  }
+}
+@include u.breakpoint-down(medium) {
+  .wc-container {
+    .work-card-list {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
