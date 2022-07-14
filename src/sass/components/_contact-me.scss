@@ -2,13 +2,15 @@
 .contact-me {
   padding-block: 4rem;
   display: flex;
+  justify-content: center;
   width: 90%;
   font-family: var(--Epilogue);
   max-width: u.rem(1550);
   color: var(--Dark-primary);
   &__info {
-    margin-block: u.rem(16);
+    margin: u.rem(16);
     width: 50%;
+    max-width: u.rem(550);
   }
   &__subtitle {
     text-transform: uppercase;

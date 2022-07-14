@@ -2,11 +2,12 @@
 .work-card {
   position: relative;
   border-radius: u.rem(2);
-  min-width: u.rem(450);
-  width: u.rem(450);
-  height: u.rem(500);
+  width: 94%;
+  height: 94%;
+  max-width: u.rem(650);
+  max-height: u.rem(429);
   border: solid 0.5px var(--Light-border);
-  margin: u.rem(10) u.rem(25);
+  margin: u.rem(10);
   overflow: hidden;
   &__img {
     width: 100%;

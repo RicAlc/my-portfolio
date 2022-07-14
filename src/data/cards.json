@@ -19,5 +19,12 @@
     "tag": "HTML CSS JS",
     "imgFile": "time-dashboard.png",
     "link": "https://ricalc.github.io/Portfolio/Front-end/TimeTrackingDashboard/index.html"
+  },
+  {
+    "id": 4,
+    "title": "Pokedex",
+    "tag": "HTML CSS JS",
+    "imgFile": "pokedex.jpeg",
+    "link": "https://ricalc.github.io/Pokedex/"
   }
 ]
