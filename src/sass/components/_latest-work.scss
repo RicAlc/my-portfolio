@@ -37,3 +37,17 @@
     }
   }
 }
+@include u.breakpoint-down(medium) {
+  .latest-work {
+    .work {
+      width: 90%;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-block: u.rem(25);
+      .explore-more {
+        margin: u.rem(10) 0;
+        padding: u.rem(8);
+      }
+    }
+  }
+}
