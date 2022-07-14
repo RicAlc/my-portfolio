@@ -36,3 +36,15 @@
     }
   }
 }
+@include u.breakpoint-down(medium) {
+  .contact-me {
+    flex-direction: column-reverse;
+    align-items: center;
+    &__info {
+      width: 90%;
+    }
+    &__title {
+      margin-block: u.rem(20);
+    }
+  }
+}
