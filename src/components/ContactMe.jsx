@@ -11,9 +11,10 @@ function ContactMe() {
           <h3 className='contact-me__subtitle'>Contacto</h3>
           <h2 className='contact-me__title'>Contáctame</h2>
           <p className='contact-me__text'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
-            exercitationem libero saepe ad quam necessitatibus magni, obcaecati
-            ex provident voluptas.s
+            Si necesitas ayuda para construir tu sitio web y desplegarlo, no
+            dudes en contactarme. Te ayudaré a desarrollar tu página con las
+            tecnologías más usadas en la industria del desarrollo web como
+            React, Sass y PHP.
           </p>
           <div className='reach-me'>
             <img src={phone_icon} alt='icono' className='reach-me__icon' />

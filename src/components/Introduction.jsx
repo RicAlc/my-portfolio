@@ -9,9 +9,8 @@ function Introduction() {
           <h1 className='name'>RICARDO ALCALÁ</h1>
           <h2 className='profession'>Desarrollador web</h2>
           <p className='about__desc'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            labore repellendus deserunt sit, error sint nisi, culpa nemo, libero
-            voluptate pariatur itaque omnis in temporibus.
+            !Hola¡, soy Ricardo soy un desarrollador web apasionado por la
+            tecnología, programación y la electrónica.
           </p>
           <div className='about__LinkBtns'>
             <LinkBtn

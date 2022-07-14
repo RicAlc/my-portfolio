@@ -4,7 +4,7 @@ import WorkCardList from "./WorkCardsList";
 function LatestWork() {
   return (
     <section className='section bg-dark'>
-      <div className='latest-work'>
+      <div className='latest-work' id='latest_work'>
         <div className='latest-work__subtext'>PORTFOLIO</div>
         <div className='work'>
           <h2 className='latest-work__title'>Proyectos recientes</h2>
