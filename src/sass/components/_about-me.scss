@@ -45,3 +45,14 @@
     }
   }
 }
+@include u.breakpoint-down(medium) {
+  .about-me {
+    flex-direction: column;
+    &__figure,
+    .description {
+      width: 95%;
+      padding: u.rem(5);
+      max-width: u.rem(550);
+    }
+  }
+}

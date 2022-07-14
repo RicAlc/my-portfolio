@@ -12,8 +12,8 @@ function App() {
       <Header />
       <Introduction />
       <AboutMe />
-      <LatestWork />
-      <ContactMe />
+      {/* <LatestWork />
+      <ContactMe /> */}
       <Footer />
     </div>
   );
