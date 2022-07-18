@@ -25,7 +25,10 @@ function Header() {
   return (
     <header className={`${menuToggle ? "header" : "header fixed"}`}>
       <nav role='navigation'>
-        <div className='logo'>
+        <div
+          className='logo'
+          onClick={() => window.open("https://ricalc.netlify.app/", "_self")}
+        >
           <img src={logo} alt='Logo' className='logo__img' />
         </div>
         <ul className={`${menuToggle ? "nav-bar" : "nav-bar toggle"}`}>

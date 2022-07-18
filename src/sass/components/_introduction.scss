@@ -6,6 +6,7 @@
   height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
+  max-height: u.rem(900);
   max-width: u.rem(1550);
   .about,
   .me-fig {
