@@ -5,7 +5,7 @@ import address_icon from "../assets/address-icon.png";
 function ContactMe() {
   return (
     <section className='section'>
-      <div className='contact-me'>
+      <div className='contact-me' id='contactMe'>
         <MailMeForm />
         <div className='contact-me__info'>
           <h3 className='contact-me__subtitle'>Contacto</h3>

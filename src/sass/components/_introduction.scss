@@ -34,6 +34,7 @@
     &__LinkBtns {
       display: flex;
       .explore-work {
+        animation: float 3.5s ease infinite;
         background-color: var(--Dark-secondary);
         font-weight: 600;
         color: var(--Dark-primary);
@@ -46,6 +47,7 @@
       }
     }
     &__contact-me {
+      animation: float 4s ease-in-out infinite;
       background-color: var(--Dark-primary);
       font-weight: 600;
       font-size: var(--fs-400);
@@ -97,5 +99,16 @@
         justify-content: space-evenly;
       }
     }
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-15px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }

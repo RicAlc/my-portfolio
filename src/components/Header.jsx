@@ -5,42 +5,48 @@ import { useState } from "react";
 function Header() {
   const [menuToggle, setMenuToggle] = useState(true);
   const [aria_label, setAria_label] = useState("Abrir menú");
+
+  const closeMenu = () => {
+    setMenuToggle(true);
+    document.body.style.overflow = "auto";
+  };
   const openMenu = () => {
     setMenuToggle(!menuToggle);
-    window.scrollTo(0, 0);
     if (menuToggle) {
       document.body.style.overflow = "hidden";
+      document.body.style.paddingTop = "60px";
       setAria_label("Cerrar menú");
     } else {
+      document.body.style.paddingTop = "unset";
       document.body.style.overflow = "auto";
       setAria_label("Abrir menú");
     }
   };
   return (
-    <header className='header'>
+    <header className={`${menuToggle ? "header" : "header fixed"}`}>
       <nav role='navigation'>
         <div className='logo'>
           <img src={logo} alt='Logo' className='logo__img' />
         </div>
         <ul className={`${menuToggle ? "nav-bar" : "nav-bar toggle"}`}>
           <li>
-            <a className='nav-bar__link' href='#about_me'>
+            <a className='nav-bar__link' href='#about_me' onClick={closeMenu}>
               SOBRE MI
             </a>
           </li>
           <li>
-            <a className='nav-bar__link' href='#latest_work'>
+            <a className='nav-bar__link' href='#latestWork' onClick={closeMenu}>
               PROYECTOS
             </a>
           </li>
           <li>
-            <a className='nav-bar__link' href='/'>
+            <a className='nav-bar__link' href='/' onClick={closeMenu}>
               BLOG
             </a>
           </li>
         </ul>
         <div
-          className={`${menuToggle ? "contact" : "contact toggle"}`}
+          className='contact'
           onClick={() =>
             window.open("mailto:alcala.ricardoc@gmail.com", "_blank")
           }

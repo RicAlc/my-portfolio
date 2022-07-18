@@ -16,14 +16,14 @@ function Introduction() {
             <LinkBtn
               classname='explore-work'
               text='Ver proyectos'
-              link='https://github.com/RicAlc'
-              newTab={true}
+              link='·#latestWork'
+              newTab={false}
             />
             <LinkBtn
               classname='about__contact-me'
               text='Contáctame'
-              link='mailto:alcala.ricardoc@gmail.com'
-              newTab={true}
+              link='#contactMe'
+              newTab={false}
             />
           </div>
         </div>
