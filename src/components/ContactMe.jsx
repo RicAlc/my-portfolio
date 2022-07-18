@@ -2,7 +2,12 @@ import MailMeForm from "./MailMeForm";
 import phone_icon from "../assets/phone-icon.png";
 import mail_icon from "../assets/mail-icon.png";
 import address_icon from "../assets/address-icon.png";
+import { useState } from "react";
 function ContactMe() {
+  const [showToggle, setShowToggle] = useState(false);
+  const show = () => {
+    setShowToggle(!showToggle);
+  };
   return (
     <section className='section'>
       <div className='contact-me' id='contactMe'>
@@ -17,8 +22,13 @@ function ContactMe() {
             React, Sass y PHP.
           </p>
           <div className='reach-me'>
-            <img src={phone_icon} alt='icono' className='reach-me__icon' />
-            <p className='reachme__text'>MX +52 999-4141-93</p>
+            <img
+              src={phone_icon}
+              alt='icono'
+              className='reach-me__icon'
+              onClick={show}
+            />
+            <p className='reachme__text'>MX +52 9992414193</p>
           </div>
           <div className='reach-me'>
             <img src={mail_icon} alt='icono' className='reach-me__icon' />
