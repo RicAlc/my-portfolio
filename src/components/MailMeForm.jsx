@@ -1,12 +1,17 @@
 function MailMeForm() {
   return (
     <form
-      onSubmit='https://formsubmit.co/ajax/richialexis@live.com.mx'
+      action='https://formsubmit.co/ajax/richialexis@live.com.mx'
       method='POST'
       className='mail-me'
     >
       <fieldset>
         <legend className='mail-me__title'>Enviar un correo</legend>
+        <input
+          type='hidden'
+          name='_next'
+          value='https://ricalc.netlify.app/thankyou'
+        />
         <p>
           <label htmlFor='email'>Correo</label>
           <input
@@ -19,7 +24,7 @@ function MailMeForm() {
         </p>
         <p>
           <label htmlFor='subject-choose'>Asunto</label>
-          <input list='subjects' id='subject-choose' name='subjects' required />
+          <input list='subjects' id='subject-choose' name='_subject' required />
           <datalist id='subjects'>
             <option value='Diseño web' />
             <option value='Contaco' />
