@@ -5,13 +5,14 @@ function MailMeForm() {
       method='POST'
       className='mail-me'
     >
+      <input
+        type='hidden'
+        name='_next'
+        value='https://ricalc.netlify.app/thankyou'
+      />
+      <input type='hidden' name='_captcha' value='true' />
       <fieldset>
         <legend className='mail-me__title'>Enviar un correo</legend>
-        <input
-          type='hidden'
-          name='_next'
-          value='https://ricalc.netlify.app/thankyou'
-        />
         <p>
           <label htmlFor='email'>Correo</label>
           <input

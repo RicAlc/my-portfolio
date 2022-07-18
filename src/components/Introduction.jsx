@@ -16,7 +16,7 @@ function Introduction() {
             <LinkBtn
               classname='explore-work'
               text='Ver proyectos'
-              link='·#latestWork'
+              link='#latestWork'
               newTab={false}
             />
             <LinkBtn
