@@ -1,4 +1,4 @@
-@use "../utils/" as u;
+@use '../utils/' as u;
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -19,6 +19,7 @@ body {
   background-color: var(--Color);
   font-family: sans-serif;
   #root {
+    min-height: 100vh;
     .App {
       min-height: 100vh;
       display: flex;
