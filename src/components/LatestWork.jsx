@@ -1,5 +1,6 @@
-import LinkBtn from "./LinkBtn";
-import WorkCardList from "./WorkCardsList";
+import LinkBtn from './LinkBtn';
+import cardsData from '../data/cards.json';
+import WorkCardList from './WorkCardsList';
 
 function LatestWork() {
   return (
@@ -15,7 +16,7 @@ function LatestWork() {
             text='EXPLORAR MÁS'
           />
         </div>
-        <WorkCardList />
+        <WorkCardList data={cardsData} />
       </div>
     </section>
   );
