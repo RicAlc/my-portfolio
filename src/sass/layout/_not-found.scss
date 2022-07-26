@@ -1,11 +1,17 @@
 @use '../utils/' as u;
-.notfound__title {
-  font-size: var(--fs-700);
-  margin-block: u.rem(40);
-}
-.notfound__img {
-  min-width: u.rem(200);
-  max-width: u.rem(650);
-  width: 30%;
-  margin-block: u.rem(10);
+.notfound {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  &__title {
+    font-size: var(--fs-700);
+    margin-block: u.rem(40);
+  }
+  &__img {
+    align-self: center;
+    min-width: u.rem(200);
+    max-width: u.rem(650);
+    width: 30%;
+    margin-block: u.rem(10);
+  }
 }
