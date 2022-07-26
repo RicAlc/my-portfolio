@@ -11,7 +11,7 @@ function LatestWork() {
           <h2 className='latest-work__title'>Proyectos recientes</h2>
           <LinkBtn
             classname='explore-more'
-            link='https://github.com/RicAlc'
+            link='https://ricalc.netlify.app/portfolio'
             newTab={true}
             text='EXPLORAR MÁS'
           />
