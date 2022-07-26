@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "To do App",
+    "tag": "React",
+    "imgFile": "todo-app.png",
+    "link": "https://ricalc-todo.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "Atlantic",
+    "tag": "Hackathon",
+    "imgFile": "atlantic.jpeg",
+    "link": "https://ricalc.github.io/Atlantic/"
+  },
+  {
+    "id": 3,
+    "title": "Time tracking dashboard",
+    "tag": "HTML CSS JS",
+    "imgFile": "time-dashboard.png",
+    "link": "https://ricalc.github.io/Portfolio/Front-end/TimeTrackingDashboard/index.html"
+  },
+  {
+    "id": 4,
+    "title": "Pokedex",
+    "tag": "HTML CSS JS",
+    "imgFile": "pokedex.jpeg",
+    "link": "https://ricalc.github.io/Pokedex/"
+  },
+  {
+    "id": 5,
+    "title": "Travel journal",
+    "tag": "React",
+    "imgFile": "travel-journal.gif",
+    "link": "https://github.com/RicAlc/travel-journal"
+  },
+  {
+    "id": 6,
+    "title": "Airbnb experiences",
+    "tag": "React",
+    "imgFile": "airbnb-exp.jpeg",
+    "link": "https://github.com/RicAlc/airbnb-experiences"
+  },
+  {
+    "id": 7,
+    "title": "Rating component",
+    "tag": "HTML CSS JS",
+    "imgFile": "rating-comp.jpg",
+    "link": "https://ricalc.github.io/Portfolio/Front-end/RatingComponent/rating-component.html"
+  },
+  {
+    "id": 8,
+    "title": "Order summary",
+    "tag": "HTML SASS",
+    "imgFile": "order-sum.png",
+    "link": "https://ricalc.github.io/Portfolio/Front-end/OrderSummary/order-summary.html"
+  },
+  {
+    "id": 9,
+    "title": "Vacunation",
+    "tag": "HMTL CSS",
+    "imgFile": "vacunation.png",
+    "link": "https://ricalc.github.io/VacunacionCSS.github.io/"
+  }
+]
