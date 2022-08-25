@@ -8,17 +8,17 @@
   },
   {
     "id": 2,
-    "title": "Atlantic",
-    "tag": "Hackathon",
-    "imgFile": "atlantic.jpeg",
-    "link": "https://ricalc.github.io/Atlantic/"
+    "title": "CRUD Estudiantes",
+    "tag": "React Node MySQL",
+    "imgFile": "crud.jpeg",
+    "link": "https://github.com/RicAlc/students-crud-react"
   },
   {
     "id": 3,
-    "title": "Time tracking dashboard",
-    "tag": "HTML CSS JS",
-    "imgFile": "time-dashboard.png",
-    "link": "https://ricalc.github.io/Portfolio/Front-end/TimeTrackingDashboard/index.html"
+    "title": "Rick and Morty website",
+    "tag": "React",
+    "imgFile": "rickmorty.jpeg",
+    "link": "https://github.com/RicAlc/rick-and-morty-website"
   },
   {
     "id": 4,
@@ -61,5 +61,19 @@
     "tag": "HMTL CSS",
     "imgFile": "vacunation.png",
     "link": "https://ricalc.github.io/VacunacionCSS.github.io/"
+  },
+  {
+    "id": 10,
+    "title": "Atlantic",
+    "tag": "Hackathon",
+    "imgFile": "atlantic.jpeg",
+    "link": "https://ricalc.github.io/Atlantic/"
+  },
+  {
+    "id": 11,
+    "title": "Time tracking dashboard",
+    "tag": "HTML CSS JS",
+    "imgFile": "time-dashboard.png",
+    "link": "https://ricalc.github.io/Portfolio/Front-end/TimeTrackingDashboard/index.html"
   }
 ]
