@@ -1,7 +1,6 @@
-import cardsData from "../data/cards.json";
-import WorkCard from "./WorkCard";
-function WorkCardList() {
-  const work_cards = cardsData.map((card) => {
+import WorkCard from './WorkCard';
+function WorkCardList({ data }) {
+  const work_cards = data.map((card) => {
     return <WorkCard key={card.id} {...card} />;
   });
   return (

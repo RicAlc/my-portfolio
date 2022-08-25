@@ -2,7 +2,8 @@
   margin-block: 5rem;
   padding-block: calc(18% - 100px);
   text-align: center;
+  flex: 1 0 auto;
   font-family: var(--Epilogue);
-  color: var(--DarkPrimary);
+  color: var(--DarkThird);
   font-size: var(--fs-xl);
 }

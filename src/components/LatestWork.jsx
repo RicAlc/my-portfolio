@@ -1,5 +1,6 @@
-import LinkBtn from "./LinkBtn";
-import WorkCardList from "./WorkCardsList";
+import LinkBtn from './LinkBtn';
+import cardsData from '../data/cards.json';
+import WorkCardList from './WorkCardsList';
 
 function LatestWork() {
   return (
@@ -10,12 +11,12 @@ function LatestWork() {
           <h2 className='latest-work__title'>Proyectos recientes</h2>
           <LinkBtn
             classname='explore-more'
-            link='https://github.com/RicAlc'
+            link='https://ricalc.netlify.app/portfolio'
             newTab={true}
             text='EXPLORAR MÁS'
           />
         </div>
-        <WorkCardList />
+        <WorkCardList data={cardsData} />
       </div>
     </section>
   );

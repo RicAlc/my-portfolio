@@ -1,0 +1,40 @@
+@use '../utils/' as u;
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  font-family: var(--Epilogue);
+  max-width: u.rem(1450);
+  margin-block: u.rem(40);
+  .title {
+    font-size: var(--fs-800);
+    text-decoration: underline;
+    text-decoration-color: var(--Dark-third);
+  }
+  .explore-more {
+    font-size: var(--fs-600);
+    background-color: var(--Dark-primary);
+    color: var(--White);
+    border: solid 1px var(--Light-border);
+    &:hover {
+      color: var(--Dark-secondary);
+      border-color: var(--White);
+      transition: all 0.6s ease;
+    }
+  }
+}
+@include u.breakpoint-down(medium) {
+  .head {
+    flex-direction: column;
+    .title {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+}

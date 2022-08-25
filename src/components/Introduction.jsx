@@ -1,5 +1,5 @@
-import LinkBtn from "./LinkBtn";
-import dev from "../assets/Ricardo.png";
+import LinkBtn from './LinkBtn';
+import dev from '../assets/Ricardo.png';
 
 function Introduction() {
   return (
@@ -16,7 +16,7 @@ function Introduction() {
             <LinkBtn
               classname='explore-work'
               text='Ver proyectos'
-              link='#latestWork'
+              link='  #latestWork'
               newTab={false}
             />
             <LinkBtn
